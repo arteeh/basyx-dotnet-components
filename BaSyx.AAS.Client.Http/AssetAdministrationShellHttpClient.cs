@@ -136,7 +136,7 @@ namespace BaSyx.AAS.Client.Http
 
         public IResult<ISubmodel> RetrieveSubmodel(string submodelId)
         {
-            var request = base.CreateRequest(GetUri(SUBMODELS, submodelId), HttpMethod.Get);
+            var request = base.CreateRequest(GetUri(SUBMODELS, submodelId, "/submodel"), HttpMethod.Get);
             var response = base.SendRequest(request, CancellationToken.None);
             var result = base.EvaluateResponse<ISubmodel>(response, response.Entity);
             response?.Entity?.Dispose();
