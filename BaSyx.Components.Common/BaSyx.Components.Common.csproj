@@ -28,13 +28,13 @@
     <ProjectReference Include="..\BaSyx.Components.Common.Abstractions\BaSyx.Components.Common.Abstractions.csproj" />
   </ItemGroup>
 
-  <ItemGroup Condition="Exists('..\..\basyx-dotnet-sdk\')">
-    <ProjectReference Include="..\..\basyx-dotnet-sdk\BaSyx.API\BaSyx.API.csproj" />
-    <ProjectReference Include="..\..\basyx-dotnet-sdk\BaSyx.Utils.DependencyInjection\BaSyx.Utils.DependencyInjection.csproj" />
-    <ProjectReference Include="..\..\basyx-dotnet-sdk\BaSyx.Utils\BaSyx.Utils.csproj" />
+  <ItemGroup Condition="Exists('..\..\BaSyx.Core\')">
+    <ProjectReference Include="..\..\BaSyx.Core\BaSyx.API\BaSyx.API.csproj" />
+    <ProjectReference Include="..\..\BaSyx.Core\BaSyx.Utils.DependencyInjection\BaSyx.Utils.DependencyInjection.csproj" />
+    <ProjectReference Include="..\..\BaSyx.Core\BaSyx.Utils\BaSyx.Utils.csproj" />
   </ItemGroup>
 
-  <ItemGroup Condition="!Exists('..\..\basyx-dotnet-sdk\')">
+  <ItemGroup Condition="!Exists('..\..\BaSyx.Core\')">
     <PackageReference Include="BaSyx.API" Version="1.0.2" />
     <PackageReference Include="BaSyx.Utils.DependencyInjection" Version="1.0.2" />
     <PackageReference Include="BaSyx.Utils" Version="1.0.2" />

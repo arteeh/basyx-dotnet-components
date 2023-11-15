@@ -23,11 +23,11 @@
     <ProjectReference Include="..\BaSyx.Components.Common\BaSyx.Components.Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup Condition="Exists('..\..\basyx-dotnet-sdk\')">
-    <ProjectReference Include="..\..\basyx-dotnet-sdk\BaSyx.Utils.DependencyInjection\BaSyx.Utils.DependencyInjection.csproj" />
+  <ItemGroup Condition="Exists('..\..\BaSyx.Core\')">
+    <ProjectReference Include="..\..\BaSyx.Core\BaSyx.Utils.DependencyInjection\BaSyx.Utils.DependencyInjection.csproj" />
   </ItemGroup>
 
-  <ItemGroup Condition="!Exists('..\..\basyx-dotnet-sdk\')">
+  <ItemGroup Condition="!Exists('..\..\BaSyx.Core\')">
     <PackageReference Include="BaSyx.Utils.DependencyInjection" Version="1.0.2" />
   </ItemGroup>
 

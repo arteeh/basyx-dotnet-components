@@ -35,7 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\basyx-dotnet-sdk\BaSyx.Utils\BaSyx.Utils.csproj" />
+    <ProjectReference Include="..\..\BaSyx.Core\BaSyx.Utils\BaSyx.Utils.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">

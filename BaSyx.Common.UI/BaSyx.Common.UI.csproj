@@ -36,11 +36,11 @@
     <ProjectReference Include="..\BaSyx.Components.Common.Abstractions\BaSyx.Components.Common.Abstractions.csproj" />
   </ItemGroup>
 
-  <ItemGroup Condition="Exists('..\..\basyx-dotnet-sdk\')">
-    <ProjectReference Include="..\..\basyx-dotnet-sdk\BaSyx.API\BaSyx.API.csproj" />
+  <ItemGroup Condition="Exists('..\..\BaSyx.Core\')">
+    <ProjectReference Include="..\..\BaSyx.Core\BaSyx.API\BaSyx.API.csproj" />
   </ItemGroup>
 
-  <ItemGroup Condition="!Exists('..\..\basyx-dotnet-sdk\')">
+  <ItemGroup Condition="!Exists('..\..\BaSyx.Core\')">
     <PackageReference Include="BaSyx.API" Version="1.0.2" />
   </ItemGroup>
 

@@ -52,12 +52,12 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup Condition="Exists('..\..\basyx-dotnet-sdk\')">
-    <ProjectReference Include="..\..\basyx-dotnet-sdk\BaSyx.API\BaSyx.API.csproj" />
-    <ProjectReference Include="..\..\basyx-dotnet-sdk\BaSyx.Models.Export\BaSyx.Models.Export.csproj" />
+  <ItemGroup Condition="Exists('..\..\BaSyx.Core\')">
+    <ProjectReference Include="..\..\BaSyx.Core\BaSyx.API\BaSyx.API.csproj" />
+    <ProjectReference Include="..\..\BaSyx.Core\BaSyx.Models.Export\BaSyx.Models.Export.csproj" />
   </ItemGroup>
 
-  <ItemGroup Condition="!Exists('..\..\basyx-dotnet-sdk\')">
+  <ItemGroup Condition="!Exists('..\..\BaSyx.Core\')">
     <PackageReference Include="BaSyx.API" Version="1.0.2" />
     <PackageReference Include="BaSyx.Models.Export" Version="1.0.2" />
   </ItemGroup>
