@@ -12,7 +12,6 @@
     <PackageTags>BaSys BaSyx Components Common</PackageTags>
     <PackageLicenseExpression>EPL-2.0</PackageLicenseExpression>
     <PackageIcon>basyxlogo.png</PackageIcon>
-    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
     <Version>1.0.2</Version>
   </PropertyGroup>

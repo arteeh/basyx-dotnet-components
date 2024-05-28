@@ -13,7 +13,6 @@
     <PackageTags>BaSys BaSyx Components Abstractions Common</PackageTags>
     <PackageLicenseExpression>EPL-2.0</PackageLicenseExpression>
     <PackageIcon>basyxlogo.png</PackageIcon>
-    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <LangVersion>8.0</LangVersion>
     <Version>1.0.2</Version>
   </PropertyGroup>

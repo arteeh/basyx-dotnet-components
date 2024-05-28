@@ -11,7 +11,6 @@
     <Company>Robert Bosch GmbH</Company>
     <PackageTags>BaSys BaSyx HTTP Client Submodels</PackageTags>
     <PackageLicenseExpression>EPL-2.0</PackageLicenseExpression>
-    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <PackageIcon>basyxlogo.png</PackageIcon>
     <LangVersion>8.0</LangVersion>
     <Configurations>Debug;Release</Configurations>
@@ -39,10 +38,5 @@
     <PackageReference Include="BaSyx.API" Version="1.0.2" />
     <PackageReference Include="BaSyx.Utils.DependencyInjection" Version="1.0.2" />
   </ItemGroup>
-
-
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <Exec Command="IF EXIST %25BASYX_REPO%25 ( dotnet pack &quot;$(ProjectPath)&quot; -c Release --no-build --include-source --include-symbols --output &quot;%25BASYX_REPO%25&quot; ) ELSE ( ECHO BASYX_REPO Environment Variable not found)" />
-  </Target>
 
 </Project>

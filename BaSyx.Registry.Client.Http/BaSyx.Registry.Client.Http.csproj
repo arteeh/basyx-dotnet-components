@@ -12,7 +12,6 @@
     <Company>Robert Bosch GmbH</Company>
     <PackageTags>BaSys BaSyx Registry Client</PackageTags>
     <PackageLicenseExpression>EPL-2.0</PackageLicenseExpression>
-    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <PackageIcon>basyxlogo.png</PackageIcon>
     <LangVersion>8.0</LangVersion>
     <Version>1.0.2</Version>

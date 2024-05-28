@@ -15,7 +15,6 @@
     <PackageLicenseExpression>EPL-2.0</PackageLicenseExpression>    
     <PackageIcon>basyxlogo.png</PackageIcon>
     <IsPackable>true</IsPackable>
-    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <Version>1.0.2</Version>
   </PropertyGroup>
 

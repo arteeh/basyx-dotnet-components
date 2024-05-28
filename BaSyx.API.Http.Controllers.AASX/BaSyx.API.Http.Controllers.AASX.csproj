@@ -12,7 +12,6 @@
     <Company>Robert Bosch GmbH</Company>
     <PackageTags>BaSys BaSyx HTTP API Controllers AASX Package</PackageTags>
     <PackageLicenseExpression>EPL-2.0</PackageLicenseExpression>
-    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <PackageIcon>basyxlogo.png</PackageIcon>
     <LangVersion>8.0</LangVersion>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
